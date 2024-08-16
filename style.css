@@ -1,0 +1,288 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --white2: #f9f9f9;
+
+  --gray_1: #c0c0c0;
+  --gray_2: #9a9a9a;
+  --gray_3: #737373;
+  --gray_4: #4d4d4d;
+  --gray_5: #262626;
+
+  --yellow: #e6b110;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: var(--white2);
+  list-style: none;
+}
+
+body {
+  font-weight: 400;
+  scroll-behavior: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+
+  border-radius: 0 0 20px 20px;
+
+  width: 90%;
+  height: 120px;
+
+  padding: 0 20px;
+  margin: auto 65px;
+
+  background-color: var(--gray_5);
+  font-weight: 200;
+}
+
+h1 {
+  cursor: context-menu;
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+h1::first-letter {
+  color: var(--yellow);
+  font-weight: 800;
+  font-size: 36px;
+}
+
+h1:hover {
+  transform: scale(1.01);
+  font-weight: 300;
+  cursor: pointer;
+}
+
+#p-logo {
+  color: var(--yellow);
+  letter-spacing: 2px;
+  font-size: 11px;
+  margin-top: -15px;
+}
+
+ul {
+  display: flex;
+  gap: 35px;
+}
+
+li {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+li::first-letter {
+  font-weight: 500;
+}
+
+li:hover,
+.links:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  color: var(--yellow);
+}
+
+/*INICIO - SECTION*/
+
+#cx-sobre {
+  display: flex;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--white);
+}
+
+#cx-formacao {
+  display: flex;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--white2);
+}
+
+#cx-portifolio {
+  display: flex;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--white);
+}
+
+#cx-contato {
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--white2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#cx-foto-sobre {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 36%;
+  height: 100vh;
+}
+
+#img-sobre {
+  margin-top: 80px;
+  width: 340px;
+  height: 400px;
+  border-radius: 10%;
+}
+
+#cx-texto-sobre {
+  width: 50%;
+  height: 100vh;
+  margin: 230px 120px 0 90px;
+
+  text-align: center;
+  font-size: 16px;
+}
+
+#cx-texto-formacao {
+  width: 50%;
+  height: 100vh;
+  margin: 250px auto;
+
+  text-align: center;
+  font-size: 16px;
+}
+
+#cx-texto-portifolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  width: 100%;
+  height: 100vh;
+
+  margin-top: 50px;
+
+  font-size: 16px;
+}
+
+#cx-texto-contato {
+  width: 30%;
+  height: 100vh;
+  margin-top: 350px;
+
+  text-align: justify;
+  font-size: 16px;
+}
+
+h2 {
+  color: var(--black);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+h2::first-letter {
+  font-size: 30px;
+  color: var(--yellow);
+  font-weight: 600;
+}
+
+#p-sobre-mim,
+#p-formacao,
+#p-portifolio,
+#p-contato {
+  color: var(--black);
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 20px;
+}
+
+#input-nome {
+  text-transform: capitalize;
+}
+
+input,
+textarea {
+  color: var(--white);
+  background-color: var(--gray_5);
+  padding: 10px;
+
+  outline: 0;
+  border: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--gray_2);
+  font-weight: 200;
+}
+
+button {
+  margin-top: 20px;
+  width: 100px;
+  height: 40px;
+
+  color: var(--black);
+  background-color: var(--yellow);
+  border: var(--black) solid 1px;
+  border-radius: 5px;
+
+  font-weight: 800;
+  cursor: pointer;
+}
+
+span {
+  color: var(--gray_4);
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+#cx-github {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border: var(--black) solid 1px;
+  border-radius: 5px;
+}
+
+#github {
+  color: var(--black);
+  font-weight: 600;
+}
+
+#img-github {
+  width: 40px;
+}
+
+#cx-github:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/*
+No início foi usado o root (com variáveis de cores) para padronizar as cores do portifólio.
+Usei logo em seguida um padrão que reseta o Browser e suas caracteristicas pré existentes.
+Também agrupei alguns elementos que possuem as mesmas caracteristicas e reduzir o código.
+Busquei seguir a ordem do HTML para construir o CSS.
+*/
