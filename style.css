@@ -210,4 +210,8 @@ form button:hover {
   h2 {
     font-size: 2.8rem;
   }
+
+  main #index div {
+    padding-bottom: 200px;
+  }
 }
