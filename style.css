@@ -47,7 +47,7 @@ main .wrapper {
 }
 
 .wrapper {
-  height: 59rem;
+  height: 100vh;
 }
 
 #index h1 {
