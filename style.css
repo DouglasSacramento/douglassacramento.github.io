@@ -212,6 +212,10 @@ form button:hover {
   }
 
   main #index div {
-    padding-bottom: 200px;
+    padding-bottom: 15rem;
+  }
+
+  main #portifolio div {
+    padding-bottom: 15rem;
   }
 }
