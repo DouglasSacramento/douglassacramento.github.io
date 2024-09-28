@@ -73,6 +73,14 @@ main .wrapper {
   font-size: 1.3rem;
 }
 
+#index div,
+#sobre div,
+#portifolio div,
+#formacao div,
+#contato div {
+  padding-bottom: 15rem;
+}
+
 h2 {
   margin-bottom: 1rem;
 
@@ -209,13 +217,5 @@ form button:hover {
 
   h2 {
     font-size: 2.8rem;
-  }
-
-  main #index div {
-    padding-bottom: 15rem;
-  }
-
-  main #portifolio div {
-    padding-bottom: 15rem;
   }
 }
