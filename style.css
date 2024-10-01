@@ -56,6 +56,8 @@ main .wrapper {
   font-size: 4.7rem;
   font-weight: 300;
 
+  line-height: 6rem;
+
   color: #c0c0c0;
 }
 
@@ -67,7 +69,6 @@ main .wrapper {
 
 #index p {
   padding-left: 0.4rem;
-  margin-bottom: -1.2rem;
   font-weight: 700;
 
   font-size: 1.2rem;
